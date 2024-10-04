@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
 
-all_df = pd.read_csv("main_data.csv")
+all_df = pd.read_csv("dashboard/main_data.csv")
 all_df["dteday"] = pd.to_datetime(all_df["dteday"]).dt.date
 min_date = all_df["dteday"].min()
 max_date = all_df["dteday"].max()
